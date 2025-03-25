@@ -15,7 +15,13 @@ wire [3:0] selectDemuxOutput;
     // data and store into the one selected by
     // addr
  
- data_demux demuxData(
+demux_data demuxData(
+    .data,
+    .sel,
+    .A,
+    .B,
+    .C,
+    .D
  
  );
  
