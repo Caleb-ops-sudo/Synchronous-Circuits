@@ -58,7 +58,7 @@ wire [3:0] selectDemuxOutput;
         .D(dataInput[3])
     );
 
-    demux_store enableDemux(
+    demux_store En.Demux(
         .sel(addr),
         .data(store),
         .A(selectDemuxOutput[0]),
